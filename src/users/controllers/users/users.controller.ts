@@ -1,4 +1,4 @@
-import { ClassSerializerInterceptor, Controller, Get, HttpException, HttpStatus, Inject, Param, UseInterceptors, ParseIntPipe, UseFilters } from '@nestjs/common';
+import { ClassSerializerInterceptor, Controller, Get, Post, HttpException, HttpStatus, Inject, Param, UseInterceptors, ParseIntPipe, UseFilters } from '@nestjs/common';
 import { UserNotFoundException } from 'src/users/exceptions/UserNotFound';
 import { HttpExceptionFilter } from 'src/users/filters/HttpException.filter';
 import { UsersService } from 'src/users/services/users/users.service';
