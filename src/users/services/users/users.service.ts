@@ -34,7 +34,11 @@ export class UsersService {
     return this.userRepository.save(newUser);
   }
 
-  findUserByUsername(username: string) {
+  async findUserByUsername(username: string) {
     return this.userRepository.findOne({ where: { username } });
+}
+
+  findUserById(id: number) {
+    return this.userRepository.findOne({ where: { id } });
   }
 }
